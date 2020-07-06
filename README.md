@@ -32,9 +32,9 @@ Prerequisites - Install pulseaudio. One way to do this is the the Mac OS brew pa
 `ENV PULSE_SERVER=docker.for.mac.localhost` See Dockerfile.
 
 3. Run the container with the appropriate options: 
-`docker run -it -e PULSE_SERVER=docker.for.mac.localhost -e DISPLAY=host.docker.internal:0  \
+`docker run -it -e PULSE_SERVER=host.docker.internal -e DISPLAY=host.docker.internal:0  \
          -v ~/.config/pulse:/home/pulseaudio/.config/pulse --rm fire-viber`
 
-### Trouble shooting
+### Troubleshooting
 
 TBW
